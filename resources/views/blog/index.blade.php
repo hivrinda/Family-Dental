@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dental Health & Treatment Guides | Family Dental Clinic Kanjippuzha, Vallikunnam</title>
-    <meta name="description" content="Read expert dental guides on Invisible Aligners cost, single-sitting root canal, and dental implants in Vallikunnam, Kambisseri, and Kayamkulam by Dr. Farhana (BDS).">
-    <meta name="keywords" content="dental clinic in Vallikunnam, clear aligners price Vallikunnam, root canal treatment cost Vallikunnam, braces cost Alappuzha, Dr Farhana dentist Vallikunnam">
+    <title>Smile & Dental Care Guides | Family Dental Care | Oachira & Kayamkulam</title>
+    <meta name="description" content="Explore dental treatment guides from Family Dental Care, serving Oachira, Kayamkulam, Charummoodu & Karunagappally. Consult Dr. Farhana (BDS) for personalised advice.">
+    <meta name="keywords" content="smile corrections Oachira, dental veneers Kayamkulam, clear aligners cost, dental implants, Dr Farhana BDS">
     <link rel="canonical" href="https://familydentalcare.in/blog">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v=1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -37,9 +37,9 @@
         <section style="padding: 1.5rem 0 1rem;">
             <div class="container">
                 <div class="section-header" style="text-align: center; margin-bottom: 3.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                    <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 3.5rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; letter-spacing: -1px;">Blogs</h1>
+                    <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 3.5rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; letter-spacing: -1px;">Dental Insights</h1>
                     <p style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; line-height: 1.6; color: var(--text-muted); max-width: 650px; margin: 0 auto; font-style: italic; font-weight: 400;">
-                        Our personal blog focused on keeping your smile healthy and beautiful, sharing helpful guides and insights.
+                        Explore dental care guides and questions to discuss with Dr. Farhana — from smile goals and treatment options to caring for your teeth.
                     </p>
                 </div>
 
@@ -120,7 +120,7 @@
                 <!-- Brand Column -->
                 <div class="footer-brand">
                     <a href="/" class="footer-logo">FamilyDental.</a>
-                    <p>Experience premium dental care in a comfortable environment. Your smile is our top priority.</p>
+                    <p>Family Dental Care • Serving Oachira, Kayamkulam & Surrounding Areas. Smile Corrections, Dental Veneers, Clear Aligners & Dental Implants.</p>
                 </div>
                 
                 <!-- Quick Links Column -->
@@ -136,9 +136,9 @@
 
                 <!-- Services Column -->
                 <div class="footer-col">
-                    <h4>Treatment Pillars</h4>
+                    <h4>Our Treatments</h4>
                     <ul>
-                        <li><a href="/services#aligners">Invisible Aligners</a></li>
+                        <li><a href="/services#aligners">Clear Aligners</a></li>
                         <li><a href="/services#implants">Dental Implants</a></li>
                         <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
                         <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>

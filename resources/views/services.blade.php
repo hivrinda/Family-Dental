@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dental Services in Vallikunnam & Kanjippuzha | Invisible Aligners, Implants & Root Canal</title>
+    <title>Smile Corrections, Veneers, Aligners & Implants | Family Dental Care</title>
     <meta name="description"
-        content="Comprehensive dental treatments at Family Dental Clinic, Kanjippuzha Pallimukk, Vallikunnam. Expert care by Dr. Farhana (BDS) in Invisible Aligners, Dental Implants, and Single-Sitting Root Canal.">
+        content="Explore Smile Corrections, Dental Veneers, Clear Aligners & Dental Implants with Dr. Farhana (BDS). Serving Oachira, Kayamkulam, Charummoodu & Karunagappally.">
     <meta name="keywords"
-        content="dental clinic in Vallikunnam, invisible aligners in Vallikunnam, dental implants in Vallikunnam, root canal treatment in Vallikunnam, dentist near me Kanjippuzha, Dr Farhana dentist Vallikunnam, best dental clinic Kambisseri, teeth aligners Alappuzha, emergency toothache Kayamkulam">
+        content="smile corrections Oachira, dental veneers Kayamkulam, clear aligners Oachira, dental implants Kayamkulam, dental care Charummoodu, dentist Karunagappally, Dr Farhana BDS">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://familydentalcare.in/services">
@@ -21,9 +21,9 @@
     <!-- Schema.org MedicalBusiness / Dentist JSON-LD Markup -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@@context": "https://schema.org",
       "@type": "Dentist",
-      "name": "Family Dental Clinic",
+      "name": "Family Dental Care",
       "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop",
       "@id": "https://familydentalcare.in/#dentist",
       "url": "https://familydentalcare.in/services",
@@ -65,11 +65,11 @@
         "hasCredential": "BDS (Bachelor of Dental Surgery)"
       },
       "areaServed": [
-        "Vallikunnam",
-        "Kanjippuzha",
-        "Kambisseri",
+        "Oachira",
         "Kayamkulam",
-        "Changankulangara",
+        "Charummoodu",
+        "Karunagappally",
+        "Vallikunnam",
         "Alappuzha"
       ],
       "aggregateRating": {
@@ -108,13 +108,13 @@
         <section style="background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%); padding: 4rem 0 3rem;">
             <div class="container text-center" style="max-width: 900px; text-align: center; margin: 0 auto;">
                 <div class="location-badge" style="margin-bottom: 1.25rem;">
-                    <i class="fas fa-map-marker-alt"></i> Kanjippuzha Pallimukk, Vallikunnam, Kerala
+                    <i class="fas fa-map-marker-alt"></i> Serving Oachira, Kayamkulam & Surrounding Areas
                 </div>
                 <h1 style="font-size: 3.25rem; font-weight: 800; color: var(--text-dark); line-height: 1.2; margin-bottom: 1.25rem;">
-                    World-Class Dental Care in <br><span class="serif-italic" style="color: var(--primary);">Vallikunnam & Kanjippuzha</span>
+                    Cosmetic & Implant Dentistry <br><span class="serif-italic" style="color: var(--primary);">For Your Smile</span>
                 </h1>
                 <p style="font-size: 1.2rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem;">
-                    Led by <strong>Dr. Farhana (BDS)</strong>, Family Dental Clinic unites cutting-edge dental technology with gentle, patient-first care. Explore our three primary treatment pillars designed for natural smiles and lasting health.
+                    Led by <strong>Dr. Farhana (BDS)</strong>, Family Dental Care offers Smile Corrections, Dental Veneers, Clear Aligners and Dental Implants, alongside family and preventive dentistry. Welcoming patients from Oachira, Kayamkulam, Charummoodu and Karunagappally.
                 </p>
 
                 <!-- Camp Offer Banner -->
@@ -147,7 +147,7 @@
                     <span class="malayalam-snippet-badge">
                         <i class="fas fa-language"></i> പ്രാദേശിക സേവനം • മലയാളം
                     </span>
-                    <h3 class="malayalam-snippet-title">ഫാമിലി ഡെന്റൽ ക്ലിനിക്ക്, കാഞ്ഞിപ്പുഴ പള്ളിമുക്ക്</h3>
+                    <h3 class="malayalam-snippet-title">ഫാമിലി ഡെന്റൽ കെയർ</h3>
                     <p class="malayalam-snippet-text">
                         വള്ളിക്കുന്നം, കമ്പിശ്ശേരി, കായംകുളം പരിസരവാസികൾക്ക് ഏറ്റവും വിശ്വസനീയവും വേദനാരഹിതവുമായ അത്യാധുനിക ദന്തചികിത്സ. അടിയന്തിര പല്ലുവേദനയ്ക്കും ഇംപ്ലാന്റ്, കമ്പിയിടാത്ത ഇൻവിസിബിൾ അലൈനർ ചികിത്സകൾക്കും ഡോ. ഫർഹാനയുടെ നേരിട്ടുള്ള പരിശോധന.
                     </p>
@@ -171,13 +171,13 @@
         <!-- Services Container -->
         <section class="container" style="padding-top: 2rem;">
 
-            <!-- PILLAR 1: Invisible Aligners & Orthodontics -->
+            <!-- PILLAR 1: Clear Aligners & Orthodontics -->
             <div class="services-pillar-card" id="aligners">
                 <span class="pillar-header-badge badge-aligners"><i class="fas fa-teeth"></i> Treatment Pillar 01</span>
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1.5rem; margin-bottom: 1.5rem;">
                     <div>
                         <h2 style="font-size: 2.25rem; color: var(--text-dark); margin-bottom: 0.5rem;">
-                            Invisible Aligners & Orthodontics in Vallikunnam
+                            Clear Aligners & Smile Corrections
                         </h2>
                         <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 750px;">
                             Discreet teeth straightening without metal wires or painful brackets. Removable, comfortable, and custom-crafted for professionals, college students, and teens across Alappuzha.
@@ -239,7 +239,7 @@
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1.5rem; margin-bottom: 1.5rem;">
                     <div>
                         <h2 style="font-size: 2.25rem; color: var(--text-dark); margin-bottom: 0.5rem;">
-                            Permanent Dental Implants in Kanjippuzha
+                            Dental Implants
                         </h2>
                         <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 750px;">
                             Replace missing teeth with natural-looking, permanent dental implants. Crafted from biocompatible titanium posts and lifelike ceramic crowns that fuse permanently with your jawbone.
@@ -320,8 +320,8 @@
                         <span style="font-size: 0.85rem; color: #64748b;">Gentle wisdom tooth removal & surgery</span>
                     </div>
                     <div style="padding: 1rem; background: #fafafa; border-radius: 12px; border: 1px solid #f0f0f0;">
-                        <strong style="color: var(--text-dark); display: block; margin-bottom: 0.25rem;"><i class="fas fa-check-circle" style="color: #10b981;"></i> Cosmetic Smile Makeover</strong>
-                        <span style="font-size: 0.85rem; color: #64748b;">Veneers, teeth whitening, and gap closure</span>
+                        <strong style="color: var(--text-dark); display: block; margin-bottom: 0.25rem;"><i class="fas fa-check-circle" style="color: #10b981;"></i> Smile Corrections & Dental Veneers</strong>
+                        <span style="font-size: 0.85rem; color: #64748b;">Personalised planning for your smile goals</span>
                     </div>
                 </div>
             </div>
@@ -338,7 +338,7 @@
                         <div class="doctor-badge-floating">
                             <span class="doctor-reg-tag"><i class="fas fa-id-card"></i> Kerala Dental Council Reg. Verified</span>
                             <h4 style="color: var(--text-dark); font-size: 1.15rem; margin-top: 0.25rem;">Dr. Farhana, BDS</h4>
-                            <p style="color: var(--text-muted); font-size: 0.85rem;">8+ Years Clinical Experience • Kanjippuzha Pallimukk</p>
+                            <p style="color: var(--text-muted); font-size: 0.85rem;">8+ Years Clinical Experience • BDS</p>
                         </div>
                     </div>
 
@@ -349,16 +349,16 @@
                         <h2>Dr. Farhana <span class="serif-italic" style="color: var(--primary); font-size: 2.25rem;">BDS</span></h2>
                         <div class="doctor-eeat-designation">Chief Dental Surgeon & Aesthetic Consultant</div>
                         <p class="doctor-eeat-bio">
-                            With over 8 years of dedicated clinical practice in modern orthodontics and restorative dentistry, Dr. Farhana leads Family Dental Clinic with a firm commitment to gentle, patient-first care. She specializes in transparent digital treatment planning, helping patients in Vallikunnam, Kambisseri, and Kayamkulam achieve straight, radiant smiles without pain or unnecessary invasive procedures.
+                            With 8+ years of clinical experience, Dr. Farhana (BDS) leads Family Dental Care with a commitment to personalised care and clear treatment planning. Registered with the Kerala Dental Council, she welcomes patients from Oachira, Kayamkulam, Charummoodu and Karunagappally for smile consultations and ongoing family dental care.
                         </p>
 
                         <ul class="doctor-pillars-list">
                             <li><i class="fas fa-check-circle"></i> Certified BDS Professional</li>
                             <li><i class="fas fa-check-circle"></i> Kerala Dental Council Registered</li>
-                            <li><i class="fas fa-check-circle"></i> Invisible Aligners Specialist</li>
+                            <li><i class="fas fa-check-circle"></i> Clear Aligners Specialist</li>
                             <li><i class="fas fa-check-circle"></i> Rotary Endodontics Expert</li>
                             <li><i class="fas fa-check-circle"></i> Advanced Implantology Fellow</li>
-                            <li><i class="fas fa-check-circle"></i> 100% Pain-Free Treatment Ethics</li>
+                            <li><i class="fas fa-check-circle"></i> Patient Comfort & Informed Treatment Choices</li>
                         </ul>
 
                         <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
@@ -381,14 +381,14 @@
                     <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem;">Real Stories • Real Smiles</span>
                     <h2 style="font-size: 2.75rem; color: var(--text-dark); margin: 0.5rem 0;">Real Patient Video Testimonials</h2>
                     <p style="color: var(--text-muted); font-size: 1.1rem;">
-                        Hear genuine Malayalam and English experiences directly from patients who received clear aligners, implants, and root canals at Family Dental Clinic.
+                        Hear genuine Malayalam and English experiences directly from patients who received clear aligners, implants, and root canals at Family Dental Care.
                     </p>
                 </div>
 
                 <div class="video-grid">
                     <!-- Video 1: Aligners Story -->
                     <div class="video-card">
-                        <div class="video-thumbnail-wrapper" onclick="alert('Playing patient story: Invisible Aligners experience with Dr. Farhana');">
+                        <div class="video-thumbnail-wrapper" onclick="alert('Playing patient story: Clear Aligners experience with Dr. Farhana');">
                             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop"
                                 alt="Aligners Patient Video Review Vallikunnam">
                             <span class="video-language-badge">Malayalam</span>
@@ -400,14 +400,14 @@
                         <div class="video-card-body">
                             <h4 class="video-card-title">"Straightened my teeth in 8 months without anyone noticing!"</h4>
                             <div class="video-card-patient">
-                                <i class="fas fa-user-check" style="color: #0f766e;"></i> Anjali M. • Invisible Aligners Patient (Kambisseri)
+                                <i class="fas fa-user-check" style="color: #0f766e;"></i> Anjali M. • Clear Aligners Patient (Kambisseri)
                             </div>
                         </div>
                     </div>
 
                     <!-- Video 2: Painless Implant Story -->
                     <div class="video-card">
-                        <div class="video-thumbnail-wrapper" onclick="alert('Playing patient story: Pain-free Dental Implant procedure at Family Dental Clinic');">
+                        <div class="video-thumbnail-wrapper" onclick="alert('Playing patient story: Pain-free Dental Implant procedure at Family Dental Care');">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
                                 alt="Dental Implant Patient Video Review Kerala">
                             <span class="video-language-badge">Malayalam</span>
@@ -451,9 +451,9 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             <span style="color: #0f172a; font-weight: 700; margin-left: 0.5rem;">4.9 / 5.0 Rating</span>
                         </div>
-                        <h3>Visited Family Dental Clinic Recently?</h3>
+                        <h3>Visited Family Dental Care Recently?</h3>
                         <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 0;">
-                            Your feedback helps local families across Vallikunnam and Kambisseri find gentle, honest dental care. Scan the reception standee or click below to share your Google review in 30 seconds!
+                            Your feedback helps patients across Oachira, Kayamkulam, Charummoodu and Karunagappally find thoughtful dental care. Scan the reception standee or click below to share your Google review in 30 seconds!
                         </p>
                     </div>
                     <a href="https://maps.google.com/?cid=1155437812921048890" target="_blank" class="btn-google-review">
@@ -467,8 +467,8 @@
         <section class="map-section" id="location" style="padding: 4rem 0;">
             <div class="container">
                 <div class="map-header">
-                    <h2>Find Us in Kanjippuzha Pallimukk</h2>
-                    <p>Conveniently accessible from Vallikunnam, Kambisseri, and Kayamkulam</p>
+                    <h2>Plan Your Visit</h2>
+                    <p>Approximate drive: Oachira 20 mins • Kayamkulam 25 mins • Karunagappally 25 mins. Also welcoming patients from Charummoodu. Travel times vary with route and traffic.</p>
                 </div>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.3697445803323!2d76.56293889999999!3d9.121036700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b061b264a857cef%3A0x1008df66628f1f3a!2sFamily%20Dental%20Care%2C%20Kanjippuzha!5e0!3m2!1sen!2sin!4v1786685539718!5m2!1sen!2sin"
@@ -485,7 +485,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="footer-logo">FamilyDental.</a>
-                    <p>Kanjippuzha, Vallikunnam's premier clinic for Invisible Aligners, Dental Implants, and Gentle Family Dentistry. Led by Dr. Farhana (BDS).</p>
+                    <p>Smile Corrections, Dental Veneers, Clear Aligners & Dental Implants with Dr. Farhana (BDS). Serving Oachira, Kayamkulam, Charummoodu & Karunagappally.</p>
                 </div>
 
                 <div class="footer-col">
@@ -499,9 +499,9 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Treatment Pillars</h4>
+                    <h4>Our Treatments</h4>
                     <ul>
-                        <li><a href="/services#aligners">Invisible Aligners</a></li>
+                        <li><a href="/services#aligners">Clear Aligners</a></li>
                         <li><a href="/services#implants">Permanent Implants</a></li>
                         <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
                         <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>
@@ -526,7 +526,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; {{ date('Y') }} Family Dental Clinic, Kanjippuzha. All rights reserved. Registered with Kerala Dental Council.</p>
+                <p>&copy; {{ date('Y') }} Family Dental Care. All rights reserved. Registered with Kerala Dental Council.</p>
             </div>
         </div>
     </footer>

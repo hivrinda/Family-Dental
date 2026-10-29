@@ -73,7 +73,7 @@
                     <div class="sidebar-cta-widget">
                         <i class="fas fa-user-md cta-widget-icon"></i>
                         <h3>Consult Dr. Farhana (BDS)</h3>
-                        <p>Speak directly with our lead specialist in Kanjippuzha Pallimukk. Zero-pain treatments & clear aligner scans.</p>
+                        <p>Discuss Smile Corrections, Dental Veneers, Clear Aligners or Dental Implants with Dr. Farhana. Serving Oachira, Kayamkulam & surrounding areas.</p>
                         <a href="tel:+917012761098" class="btn btn-primary" style="width: 100%;">
                             <i class="fas fa-phone-alt"></i> Call +91 70127 61098
                         </a>
@@ -111,7 +111,7 @@
                 <!-- Brand Column -->
                 <div class="footer-brand">
                     <a href="/" class="footer-logo">FamilyDental.</a>
-                    <p>Experience premium dental care in a comfortable environment. Your smile is our top priority.</p>
+                    <p>Family Dental Care • Serving Oachira, Kayamkulam & Surrounding Areas. Smile Corrections, Dental Veneers, Clear Aligners & Dental Implants.</p>
                 </div>
                 
                 <!-- Quick Links Column -->
@@ -127,9 +127,9 @@
 
                 <!-- Services Column -->
                 <div class="footer-col">
-                    <h4>Treatment Pillars</h4>
+                    <h4>Our Treatments</h4>
                     <ul>
-                        <li><a href="/services#aligners">Invisible Aligners</a></li>
+                        <li><a href="/services#aligners">Clear Aligners</a></li>
                         <li><a href="/services#implants">Dental Implants</a></li>
                         <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
                         <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>
