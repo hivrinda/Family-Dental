@@ -9,6 +9,19 @@ require_once __DIR__.'/../../scripts/setup-hostinger.php';
 
 class HostingerSetupTest extends TestCase
 {
+    public function test_command_capture_works_without_shell_exec(): void
+    {
+        $script = var_export(realpath(__DIR__.'/../../scripts/setup-hostinger.php'), true);
+        $code = 'require '.$script.'; echo hostingerCapture([PHP_BINARY, "-r", "echo 42;"]);';
+        $this->assertSame('42', hostingerCapture([PHP_BINARY, '-d', 'disable_functions=shell_exec', '-r', $code]));
+    }
+
+    public function test_failed_captured_commands_stop_setup(): void
+    {
+        $this->expectException(\RuntimeException::class);
+        hostingerCapture([PHP_BINARY, '-r', 'exit(7);']);
+    }
+
     public function test_env_updates_preserve_key_and_round_trip_secret_characters(): void
     {
         $secret = 'spaces $dollars #hash "quotes" \\ slashes and apostrophe\'';

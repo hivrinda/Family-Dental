@@ -24,15 +24,25 @@ function hostingerUpdateEnv(string $source, array $values): string
     return $source;
 }
 
+function hostingerCapture(array $command): string
+{
+    $process = proc_open($command, [STDIN, ['pipe', 'w'], STDERR], $pipes);
+    if (!is_resource($process)) throw new RuntimeException('Could not start setup command.');
+    $output = stream_get_contents($pipes[1]);
+    fclose($pipes[1]);
+    if (proc_close($process) !== 0) throw new RuntimeException('Setup command failed. Check the SSH runtime and terminal.');
+    return $output;
+}
+
 function hostingerPrompt(string $label, string $default = '', bool $secret = false): string
 {
     if ($secret) {
         fwrite(STDOUT, $label.': ');
-        $state = shell_exec('stty -g 2>/dev/null');
+        $state = hostingerCapture(['stty', '-g']);
         if (!$state) throw new RuntimeException('A private SSH terminal is required for password input.');
-        shell_exec('stty -echo');
+        hostingerCapture(['stty', '-echo']);
         try { $answer = fgets(STDIN); }
-        finally { shell_exec('stty '.escapeshellarg(trim($state))); fwrite(STDOUT, "\n"); }
+        finally { hostingerCapture(['stty', trim($state)]); fwrite(STDOUT, "\n"); }
     } else {
         fwrite(STDOUT, $label.($default !== '' ? " [$default]" : '').': ');
         $answer = fgets(STDIN);
@@ -79,7 +89,7 @@ function hostingerSetup(): void
     }
     if (PHP_OS_FAMILY === 'Windows') throw new RuntimeException('Run this setup on the Linux Hostinger SSH terminal, not the local Windows project.');
     if (PHP_VERSION_ID < 80200) throw new RuntimeException('PHP 8.2+ required. Set the CLI and hPanel PHP version first.');
-    foreach (['proc_open', 'shell_exec'] as $function) {
+    foreach (['proc_open'] as $function) {
         if (!function_exists($function)) throw new RuntimeException("Enable $function for the SSH PHP runtime before setup.");
     }
     foreach (['ctype', 'curl', 'dom', 'fileinfo', 'filter', 'hash', 'mbstring', 'openssl', 'pcre', 'pdo', 'session', 'tokenizer', 'xml'] as $extension) {
@@ -91,10 +101,16 @@ function hostingerSetup(): void
     echo "FamilyDentalCare — Hostinger setup\nNo database resets or existing website deletion.\n";
     $publicTarget = hostingerPrompt('Absolute public_html path', dirname($root).'/public_html');
     $publicTarget = hostingerPublicTarget($root, $publicTarget);
-    $composer = trim((string) shell_exec('command -v composer2 2>/dev/null || command -v composer 2>/dev/null'));
+    $composer = '';
+    foreach (['composer2', 'composer'] as $name) {
+        foreach (explode(PATH_SEPARATOR, getenv('PATH') ?: '') as $directory) {
+            $candidate = rtrim($directory, '/').'/'.$name;
+            if ($directory !== '' && is_file($candidate) && is_readable($candidate)) { $composer = $candidate; break 2; }
+        }
+    }
     if (!$composer) throw new RuntimeException('Composer 2 is required. Install/enable it on your Hostinger account first.');
     hostingerRun([PHP_BINARY, $composer, '--version']);
-    $composerVersion = shell_exec(escapeshellarg(PHP_BINARY).' '.escapeshellarg($composer).' --version 2>/dev/null');
+    $composerVersion = hostingerCapture([PHP_BINARY, $composer, '--version']);
     if (!preg_match('/Composer (?:version )?2\./i', $composerVersion ?? '')) throw new RuntimeException('Composer 2 is required; this account currently resolves another version.');
     if (!is_file($root.'/composer.lock')) throw new RuntimeException('composer.lock missing; use a complete Git clone.');
     foreach (['storage/framework/cache/data', 'storage/framework/sessions', 'storage/framework/views', 'storage/logs', 'storage/app/public', 'bootstrap/cache'] as $directory) {

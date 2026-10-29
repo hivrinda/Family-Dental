@@ -25,6 +25,8 @@ After completion, visit `/up`, the homepage, services/blog and `/login`, then ve
 
 Help without changing files:
 
+The setup script does not require `shell_exec`. It uses `proc_open` for Composer/Artisan and terminal echo control. If `proc_open` is disabled too, the account's SSH PHP configuration must allow it; ask Hostinger support about the CLI runtime (hPanel website PHP settings may differ).
+
 ```bash
 php scripts/setup-hostinger.php --help
 ```
