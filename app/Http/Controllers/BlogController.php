@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
+use Illuminate\Pagination\LengthAwarePaginator;
 use App\Models\Blog;
 
 class BlogController extends Controller
@@ -187,11 +188,13 @@ class BlogController extends Controller
     {
         $articles = [];
         $slugsSeen = [];
+        $databaseAvailable = false;
 
         // 1. Try fetching from local database model if available
         try {
             if (class_exists(Blog::class)) {
                 $dbBlogs = Blog::orderBy('created_at', 'desc')->get();
+                $databaseAvailable = true;
                 if ($dbBlogs->isNotEmpty()) {
                     foreach ($dbBlogs as $b) {
                         $item = [
@@ -216,9 +219,10 @@ class BlogController extends Controller
             // DB connection or migration not ready yet
         }
 
-        // 2. Ensure the Action Plan's primary local guides are always present
-        foreach (self::getDefaultArticles() as $defaultArticle) {
-            if (!isset($slugsSeen[$defaultArticle['slug']])) {
+        // Use sample guides only before the database is available. Once it is
+        // ready, respect admin edits and deletions, including an empty blog table.
+        if (!$databaseAvailable) {
+            foreach (self::getDefaultArticles() as $defaultArticle) {
                 $articles[] = $defaultArticle;
                 $slugsSeen[$defaultArticle['slug']] = true;
             }
@@ -296,6 +300,16 @@ class BlogController extends Controller
                 return strtolower($blog['category'] ?? '') === strtolower($selectedCategory);
             }));
         }
+
+        $page = max(1, (int) $request->query('page', 1));
+        $perPage = 6;
+        $articles = new LengthAwarePaginator(
+            array_slice($articles, ($page - 1) * $perPage, $perPage),
+            count($articles),
+            $perPage,
+            $page,
+            ['path' => $request->url(), 'query' => $request->except('page')]
+        );
 
         return view('blog.index', compact('articles', 'categories', 'selectedCategory'));
     }

@@ -19,25 +19,27 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
+            'email' => 'required|string|email',
+            'password' => 'required|string',
         ]);
 
-        $adminEmail = env('ADMIN_EMAIL', 'admin@familydental.com');
-        $adminPassword = env('ADMIN_PASSWORD', 'admin123');
+        $adminEmail = config('admin.email');
+        $adminPassword = config('admin.password');
 
         if ($request->input('email') === $adminEmail && $request->input('password') === $adminPassword) {
+            $request->session()->regenerate();
             session(['admin_logged_in' => true]);
             return redirect()->route('admin.dashboard')->with('success', 'Logged in successfully!');
         }
 
-        return back()->withErrors(['email' => 'Invalid email or password.'])->withInput();
+        return back()->withErrors(['email' => 'Invalid email or password.'])->withInput($request->only('email'));
     }
 
     // Process Logout
     public function logout(Request $request)
     {
-        $request->session()->forget('admin_logged_in');
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
         return redirect()->route('admin.login.form')->with('success', 'Logged out successfully.');
     }
 }

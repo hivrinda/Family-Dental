@@ -26,15 +26,16 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|max:255',
-            'category' => 'required',
-            'excerpt' => 'required|max:500',
-            'content' => 'required',
-            'read_time' => 'required|max:50',
-            'image' => 'nullable|url',
+            'title' => 'required|string|max:255',
+            'category' => 'required|string|max:255',
+            'excerpt' => 'required|string|max:500',
+            'content' => 'required|string',
+            'read_time' => 'required|string|max:50',
+            'image' => 'nullable|url|max:255',
         ]);
 
-        $slug = Str::slug($request->title);
+        $slug = (Str::slug($request->title) ?: 'article');
+        $slug = substr($slug, 0, 240);
         $originalSlug = $slug;
         $counter = 1;
 
@@ -70,18 +71,19 @@ class AdminController extends Controller
         $article = Blog::findOrFail($id);
 
         $request->validate([
-            'title' => 'required|max:255',
-            'category' => 'required',
-            'excerpt' => 'required|max:500',
-            'content' => 'required',
-            'read_time' => 'required|max:50',
-            'image' => 'nullable|url',
+            'title' => 'required|string|max:255',
+            'category' => 'required|string|max:255',
+            'excerpt' => 'required|string|max:500',
+            'content' => 'required|string',
+            'read_time' => 'required|string|max:50',
+            'image' => 'nullable|url|max:255',
         ]);
 
         // Regenerate slug only if title changes
         $slug = $article->slug;
         if ($request->title !== $article->title) {
-            $slug = Str::slug($request->title);
+            $slug = (Str::slug($request->title) ?: 'article');
+            $slug = substr($slug, 0, 240);
             $originalSlug = $slug;
             $counter = 1;
             while (Blog::where('slug', $slug)->where('id', '!=', $id)->exists()) {

@@ -8,27 +8,12 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    @include('partials.dentist-schema')
 </head>
-<body>
+<body class="wireframe-page">
 
     <!-- Header Navigation -->
-    <header>
-        <div class="container header-inner">
-            <a href="/" class="logo">FamilyDental.</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <a href="/"><i class="fas fa-home"></i> Home</a>
-                <a href="/services"><i class="fas fa-tooth"></i> Services</a>
-                <a href="/services#aligners"><i class="fas fa-teeth"></i> Aligners</a>
-                <a href="/services#implants"><i class="fas fa-teeth-open"></i> Implants</a>
-                <a href="/services#doctor-bio"><i class="fas fa-user-md"></i> Dr. Farhana</a>
-                <a href="/blog" class="active"><i class="fas fa-newspaper"></i> Blog</a>
-                <a href="/#contact"><i class="fas fa-map-marker-alt"></i> Contact</a>
-            </nav>
-        </div>
-    </header>
+    @include('partials.site-navigation')
 
     <main style="padding-top: 8rem;">
         <!-- Article Header Section -->
@@ -110,7 +95,7 @@
             <div class="footer-grid">
                 <!-- Brand Column -->
                 <div class="footer-brand">
-                    <a href="/" class="footer-logo">FamilyDental.</a>
+                    <a href="/" class="footer-logo">FamilyDentalCare</a>
                     <p>Experience premium dental care in a comfortable environment. Your smile is our top priority.</p>
                 </div>
                 
@@ -141,7 +126,7 @@
                     <h4>Contact & Hours</h4>
                     <div class="footer-contact-item">
                         <span><i class="fas fa-map-marker-alt"></i></span>
-                        <span>Kanjippuzha Pallimukk,<br>Changankulangara - Kambisseri Rd,<br>Vallikunnam, Kerala 690501</span>
+                        <span>Kanjippuzha Pallimukk, Changankulangara Kambisseri Road, Vallikunnam, Kerala 690501</span>
                     </div>
                     <div class="footer-contact-item">
                         <span><i class="fas fa-phone-alt"></i></span>
@@ -154,38 +139,15 @@
                 </div>
             </div>
             
+            @include('partials.catchment-footer')
+
             <div class="footer-bottom">
-                <p>&copy; {{ date('Y') }} Family Dental Care. All rights reserved. Designed for Excellence.</p>
+                <p>&copy; {{ date('Y') }} FamilyDentalCare. All rights reserved. Designed for Excellence.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Mobile Menu script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const nav = document.querySelector('nav');
-            
-            if (menuToggle && nav) {
-                menuToggle.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    nav.classList.toggle('active');
-                    const icon = menuToggle.querySelector('i');
-                    if (nav.classList.contains('active')) {
-                        icon.className = 'fas fa-times';
-                    } else {
-                        icon.className = 'fas fa-bars';
-                    }
-                });
 
-                document.addEventListener('click', function(e) {
-                    if (nav.classList.contains('active') && !nav.contains(e.target) && !menuToggle.contains(e.target)) {
-                        nav.classList.remove('active');
-                        menuToggle.querySelector('i').className = 'fas fa-bars';
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="{{ asset('js/site-navigation.js') }}?v={{ filemtime(public_path('js/site-navigation.js')) }}" defer></script>
 </body>
 </html>

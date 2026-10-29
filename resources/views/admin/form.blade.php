@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $isEdit ? 'Edit Article' : 'New Article' }} | Family Dental Clinic</title>
+    <title>{{ $isEdit ? 'Edit Article' : 'New Article' }} | FamilyDentalCare</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -90,7 +90,7 @@
     <!-- Header bar -->
     <header class="admin-header">
         <div class="container admin-header-inner">
-            <a href="/" class="logo">FamilyDental. <span style="font-weight: 400; font-size: 1rem; opacity: 0.7;">Admin</span></a>
+            <a href="/" class="logo">FamilyDentalCare <span style="font-weight: 400; font-size: 1rem; opacity: 0.7;">Admin</span></a>
             <a href="{{ route('admin.dashboard') }}" style="color: var(--text-muted); text-decoration: none; font-weight: 600;">
                 <i class="fas fa-arrow-left"></i> Back to Dashboard
             </a>

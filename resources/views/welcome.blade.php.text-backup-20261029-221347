@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dental Clinic in Vallikunnam | Family Dental Clinic Kanjippuzha | Aligners & Implants</title>
+    <meta name="description"
+        content="Best dental clinic in Vallikunnam, Kanjippuzha & Kambisseri. Led by Dr. Farhana (BDS). Specialized in Invisible Aligners, Dental Implants, and Single-Sitting Root Canal. Call +91 70127 61098.">
+    <meta name="keywords"
+        content="dental clinic in Vallikunnam, dentist near me Kanjippuzha, best dental clinic Kambisseri, family dentist Kayamkulam, invisible aligners in Vallikunnam, dental implants in Vallikunnam, root canal treatment in Vallikunnam, Dr Farhana dentist Vallikunnam, female dentist in Vallikunnam">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://familydentalcare.in/">
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ filemtime(public_path('css/style.css')) }}">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+
+    <!-- Schema.org LocalBusiness / Dentist JSON-LD Markup -->
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Family Dental Clinic",
+      "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop",
+      "@id": "https://familydentalcare.in/#clinic",
+      "url": "https://familydentalcare.in",
+      "telephone": "+917012761098",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kanjippuzha Pallimukk, Changankulangara - Kambisseri Rd",
+        "addressLocality": "Vallikunnam",
+        "addressRegion": "Kerala",
+        "postalCode": "690501",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.1210367,
+        "longitude": 76.5629388
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "18:30"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Farhana",
+        "jobTitle": "Lead Dental Specialist & Aesthetic Consultant",
+        "hasCredential": "BDS (Bachelor of Dental Surgery)"
+      },
+      "areaServed": [
+        "Vallikunnam",
+        "Kanjippuzha",
+        "Kambisseri",
+        "Kayamkulam",
+        "Changankulangara",
+        "Alappuzha"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "33"
+      }
+    }
+    </script>
+</head>
+
+<body class="home-page">
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">FamilyDental.</a>
+            <button class="mobile-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="home-navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="home-navigation">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+                <a href="/services"><i class="fas fa-tooth"></i> Services</a>
+                <a href="#about"><i class="fas fa-user-md"></i> Dr. Farhana</a>
+                <a href="/services#aligners"><i class="fas fa-teeth"></i> Aligners</a>
+                <a href="/services#implants"><i class="fas fa-teeth-open"></i> Implants</a>
+                <a href="/blog"><i class="fas fa-newspaper"></i> Blog</a>
+                <a href="#contact"><i class="fas fa-map-marker-alt"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <div class="location-badge">
+                        <i class="fas fa-map-marker-alt"></i> Kanjippuzha Pallimukk, Vallikunnam, Kerala
+                    </div>
+                    <h1>Top Dental Clinic in Vallikunnam & Kanjippuzha <br><span class="serif-italic" style="color: var(--primary);">Dr. Farhana (BDS)</span></h1>
+                    <p>Experience gentle, modern dental care near Kambisseri and Kayamkulam. We specialize in pain-free invisible aligners, permanent dental implants, and single-sitting root canals.</p>
+
+                    <div class="hero-actions">
+                        <a href="tel:+917012761098" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i> Book Free Consultation
+                        </a>
+                        <a href="https://wa.me/917012761098?text=Hello%20Dr.%20Farhana,%20I%20would%20like%20to%20book%20a%20consultation%20at%20Family%20Dental%20Clinic." target="_blank" class="btn btn-outline">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop"
+                            alt="Doctor and Patient Consultation">
+                    </div>
+                    <!-- Floating Badge 1 -->
+                    <div class="floating-badge floating-badge-1">
+                        <div class="badge-icon"><i class="fas fa-award"></i></div>
+                        <div class="badge-text">
+                            <h4>#1 Clinic</h4>
+                            <p>In Vallikunnam</p>
+                        </div>
+                    </div>
+                    <!-- Floating Badge 2 -->
+                    <div class="floating-badge floating-badge-2">
+                        <div class="badge-icon"><i class="fas fa-smile"></i></div>
+                        <div class="badge-text">
+                            <h4>10k+</h4>
+                            <p>Happy Smiles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar Section -->
+        <section class="trust-bar">
+            <div class="container trust-inner">
+                <div class="trust-item">
+                    <div class="trust-value">4.9 <i class="fas fa-star" style="color: #fbbf24; font-size: 1.75rem;"></i>
+                    </div>
+                    <div class="trust-label">33 Google reviews</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-value">8+</div>
+                    <div class="trust-label">Years experience</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-value"><i class="fas fa-check-circle"
+                            style="color: var(--primary); font-size: 2.25rem;"></i></div>
+                    <div class="trust-label">BDS certified</div>
+                </div>
+            </div>
+            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+        </section>
+
+        <!-- Bilingual Malayalam Key Info Snippet -->
+        <div class="container">
+            <div class="malayalam-snippet-card">
+                <div class="malayalam-snippet-content">
+                    <span class="malayalam-snippet-badge">
+                        <i class="fas fa-language"></i> പ്രാദേശിക സേവനം • മലയാളം
+                    </span>
+                    <h3 class="malayalam-snippet-title">ഫാമിലി ഡെന്റൽ ക്ലിനിക്ക്, കാഞ്ഞിപ്പുഴ പള്ളിമുക്ക്</h3>
+                    <p class="malayalam-snippet-text">
+                        വള്ളിക്കുന്നം, കമ്പിശ്ശേരി, കായംകുളം ഭാഗത്തുള്ളവർക്ക് മികച്ച ഡെന്റൽ ചികിത്സ. അടിയന്തിര പല്ലുവേദനയ്ക്കും ഇംപ്ലാന്റ്, കമ്പിയിടാത്ത ഇൻവിസിബിൾ അലൈനർ ചികിത്സകൾക്കും ഡോ. ഫർഹാനയുടെ നേരിട്ടുള്ള പരിശോധന.
+                    </p>
+                    <div class="malayalam-snippet-timing">
+                        <span><i class="far fa-clock"></i> തിങ്കൾ - ശനി: 9:00 AM - 6:30 PM</span>
+                        <span><i class="fas fa-phone-alt"></i> അടിയന്തിര സഹായം: +91 70127 61098</span>
+                    </div>
+                </div>
+                <div class="malayalam-snippet-actions">
+                    <a href="https://wa.me/917012761098?text=ഹലോ%20ഡോക്ടർ,%20എനിക്ക്%20ചികിത്സയെക്കുറിച്ച്%20കൂടുതൽ%20അറിയണം." target="_blank" class="btn-malayalam-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp ബുക്കിംഗ്
+                    </a>
+                    <a href="/services" class="btn-malayalam-call">
+                        <i class="fas fa-tooth"></i> എല്ലാ സേവനങ്ങളും
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Key Treatment Pillars</h2>
+                    <p>Comprehensive, pain-free dental care tailored for your entire family in Vallikunnam.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" id="aligners">
+                        <div class="service-icon"><i class="fas fa-teeth"></i></div>
+                        <h3>Invisible Aligners</h3>
+                        <p>Straighten your teeth discreetly with custom-fit invisible aligners. 6 to 18 months duration with 0% EMI options starting at ₹3,500/mo.</p>
+                        <a href="/services#aligners" style="display: inline-block; margin-top: 1rem; color: var(--primary); font-weight: 700; text-decoration: none;">
+                            Learn More & Pricing <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-card" id="implants">
+                        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                        <h3>Dental Implants</h3>
+                        <p>Restore missing teeth with permanent, biocompatible titanium implants. Prevents jawbone loss and functions just like your real teeth.</p>
+                        <a href="/services#implants" style="display: inline-block; margin-top: 1rem; color: var(--primary); font-weight: 700; text-decoration: none;">
+                            Learn More & Pricing <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Single-Sitting Root Canal</h3>
+                        <p>Immediate toothache relief with modern electric rotary endodontics. 100% painless single-visit procedure to save your natural tooth.</p>
+                        <a href="/services#root-canal" style="display: inline-block; margin-top: 1rem; color: var(--primary); font-weight: 700; text-decoration: none;">
+                            Learn More & Emergency <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="/services" class="btn btn-primary">
+                        <i class="fas fa-list"></i> View All Services & Pricing Plans
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor E-E-A-T Bio Section (Dr. Farhana) -->
+        <section id="about" class="bg-alt" style="padding: 5rem 0;">
+            <div class="container about-inner">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop"
+                        alt="Dr Farhana BDS - Dentist in Vallikunnam"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="about-content">
+                    <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">
+                        Lead Dental Surgeon & Aesthetic Specialist
+                    </span>
+                    <h2 style="font-size: 2.5rem; margin-top: 0.35rem; margin-bottom: 0.75rem;">Meet Dr. Farhana, <span class="serif-italic" style="color: var(--primary);">BDS</span></h2>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main); margin-bottom: 1.25rem;">
+                        With over <strong>8+ years of dedicated clinical experience</strong>, Dr. Farhana leads Family Dental Clinic in Kanjippuzha Pallimukk. Registered with the <strong>Kerala Dental Council</strong>, she brings gentle, pain-free dental care to patients across Vallikunnam, Kambisseri, and Kayamkulam with transparent pricing and empathetic care.
+                    </p>
+                    <ul class="about-list" style="margin-bottom: 1.75rem;">
+                        <li><i class="fas fa-check-circle"></i> Certified BDS Professional (Kerala Dental Council Reg.)</li>
+                        <li><i class="fas fa-check-circle"></i> 8+ Years Clinical Practice in Advanced Dentistry</li>
+                        <li><i class="fas fa-check-circle"></i> Certified Provider for Invisible Aligners & Smile Design</li>
+                        <li><i class="fas fa-check-circle"></i> Expert in Single-Sitting Rotary Endodontics</li>
+                        <li><i class="fas fa-check-circle"></i> Patient-First, Pain-Free Treatment Ethics</li>
+                    </ul>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                        <a href="/services#doctor-bio" class="btn btn-primary">
+                            <i class="fas fa-user-md"></i> Read Full E-E-A-T Profile
+                        </a>
+                        <a href="https://wa.me/917012761098?text=Hello%20Dr.%20Farhana,%20I%20would%20like%20to%20consult%20with%20you%20at%20Family%20Dental%20Clinic." target="_blank" class="btn btn-outline">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dental Implants Section -->
+        <section id="implants-detail" class="bg-alt">
+            <div class="container about-inner">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop"
+                        alt="Dental Implants"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px;">
+                </div>
+                <div class="about-content">
+                    <h2>Dental Implants</h2>
+                    <p>Restore your smile with permanent, natural-looking dental implants. They function just like your real teeth and provide a lifetime solution for missing teeth.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Natural appearance and fit</span></li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Long-lasting and durable</span></li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Prevents bone loss</span></li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>High success rate</span></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-service-url="/services#implants">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Root Canal Section -->
+        <section id="root-canal-detail" style="background: white;">
+            <div class="container about-inner">
+                <div class="about-content">
+                    <h2>Root Canal Treatment</h2>
+                    <p>Save your natural tooth and eliminate pain with our advanced, virtually painless root canal procedures. We use the latest technology to ensure your comfort.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Relieves severe tooth pain</span></li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Saves the natural tooth</span></li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Prevents spread of infection</span></li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Pain-free modern techniques</span></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-service-url="/services#root-canal">Learn More</button>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop"
+                        alt="Root Canal Treatment"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us / Features Section (NEW) -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Family Dental Care?</h2>
+                    <p>We combine advanced technology with compassionate care.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="service-icon"><i class="fas fa-microscope"></i></div>
+                        <h3>Advanced Technology</h3>
+                        <p>We use state-of-the-art equipment for precise diagnostics and effective treatments.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="service-icon"><i class="fas fa-smile-beam"></i></div>
+                        <h3>Pain-Free Experience</h3>
+                        <p>Our priority is your comfort, utilizing modern techniques to minimize discomfort.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="service-icon"><i class="fas fa-tags"></i></div>
+                        <h3>Affordable Pricing</h3>
+                        <p>Premium dental care that fits your budget, with flexible payment options available.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="service-icon"><i class="fas fa-users"></i></div>
+                        <h3>Family Friendly</h3>
+                        <p>A welcoming environment designed to make patients of all ages feel right at home.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-alt testimonials-section-new">
+            <div class="section-header">
+                <h2>What Our Patients Say</h2>
+                <p>Don't just take our word for it—read our 4.9-star Google Reviews.</p>
+            </div>
+
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Got my invisible aligners from here and the results are amazing!
+                            The doctor is very patient and explained the entire process clearly. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #3b82f6;">A</div>
+                            <div class="author-info">
+                                <h4>Arjun K.</h4>
+                                <span>Aligner Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was terrified of getting a dental implant, but the procedure was
+                            surprisingly painless. The clinic is incredibly clean and professional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #ef4444;">M</div>
+                            <div class="author-info">
+                                <h4>Meera S.</h4>
+                                <span>Implant Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best dental clinic in the Alappuzha district! Took my entire family
+                            for a checkup and the staff was extremely friendly and welcoming."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #10b981;">R</div>
+                            <div class="author-info">
+                                <h4>Rahul P.</h4>
+                                <span>General Dentistry</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 (New) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Highly recommended for braces and aligners! Very friendly doctors
+                            and affordable treatment cost. Truly family friendly."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #a855f7;">S</div>
+                            <div class="author-info">
+                                <h4>Saritha M.</h4>
+                                <span>Braces Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 (New) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The root canal treatment here was exceptional. Zero pain and the
+                            follow up care was very detailed. Excellent doctors."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #f97316;">V</div>
+                            <div class="author-info">
+                                <h4>Vipin D.</h4>
+                                <span>Root Canal Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 (New) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Super clean clinic with state of the art equipment. The invisible
+                            aligners were delivered on time and fit perfectly. 5 stars!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #06b6d4;">N</div>
+                            <div class="author-info">
+                                <h4>Nikhil J.</h4>
+                                <span>Aligners Patient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat the same cards to make it infinite scrolling -->
+
+                    <!-- Card 1 (Duplicate) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Got my invisible aligners from here and the results are amazing!
+                            The doctor is very patient and explained the entire process clearly. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #3b82f6;">A</div>
+                            <div class="author-info">
+                                <h4>Arjun K.</h4>
+                                <span>Aligner Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 (Duplicate) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was terrified of getting a dental implant, but the procedure was
+                            surprisingly painless. The clinic is incredibly clean and professional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #ef4444;">M</div>
+                            <div class="author-info">
+                                <h4>Meera S.</h4>
+                                <span>Implant Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 (Duplicate) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best dental clinic in the Alappuzha district! Took my entire family
+                            for a checkup and the staff was extremely friendly and welcoming."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #10b981;">R</div>
+                            <div class="author-info">
+                                <h4>Rahul P.</h4>
+                                <span>General Dentistry</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 (Duplicate) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Highly recommended for braces and aligners! Very friendly doctors
+                            and affordable treatment cost. Truly family friendly."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #a855f7;">S</div>
+                            <div class="author-info">
+                                <h4>Saritha M.</h4>
+                                <span>Braces Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 (Duplicate) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The root canal treatment here was exceptional. Zero pain and the
+                            follow up care was very detailed. Excellent doctors."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #f97316;">V</div>
+                            <div class="author-info">
+                                <h4>Vipin D.</h4>
+                                <span>Root Canal Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 (Duplicate) -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Super clean clinic with state of the art equipment. The invisible
+                            aligners were delivered on time and fit perfectly. 5 stars!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: #06b6d4;">N</div>
+                            <div class="author-info">
+                                <h4>Nikhil J.</h4>
+                                <span>Aligners Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="home-blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest Dental Insights</h2>
+                    <p>Read the latest guides and articles from our dental experts to keep your smile bright and
+                        healthy.</p>
+                </div>
+
+                <div class="blog-grid-clean">
+                    @foreach($latestArticles as $article)
+                        <article class="blog-card-clean">
+                            @if($article['image'])
+                                <div class="blog-card-clean-image">
+                                    <a href="{{ route('blog.show', $article['slug']) }}">
+                                        <img src="{{ $article['image'] }}" alt="{{ $article['title'] }}">
+                                    </a>
+                                </div>
+                            @endif
+                            <div class="blog-card-clean-meta">
+                                {{ \Carbon\Carbon::parse($article['created_at'])->format('F j, Y') }}
+                            </div>
+                            <h3 class="blog-card-clean-title">
+                                <a href="{{ route('blog.show', $article['slug']) }}">{{ $article['title'] }}</a>
+                            </h3>
+                            <p class="blog-card-clean-excerpt">
+                                {{ $article['excerpt'] }}
+                            </p>
+                            <a href="{{ route('blog.show', $article['slug']) }}" class="blog-card-clean-link">
+                                Read more <span class="arrow-dot"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+                    @endforeach
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="{{ route('blog.index') }}" class="btn btn-outline">
+                        <i class="fas fa-newspaper"></i> View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section-new">
+            <div class="container faq-container">
+                <!-- Left Side: Header info -->
+                <div class="faq-left">
+                    <span class="faq-label-small">FAQ</span>
+                    <h2 class="faq-title-serif">Common <span class="serif-italic">questions</span></h2>
+                    <p class="faq-subtitle">Still not sure? Reach out to the Family Dental team — we typically respond
+                        within a few hours.</p>
+                    <a href="tel:+917012761098" class="btn-faq-contact">Contact us</a>
+                </div>
+
+                <!-- Right Side: Accordion items -->
+                <div class="faq-right">
+                    <div class="faq-accordion-item">
+                        <button type="button" class="faq-accordion-header" aria-expanded="false">
+                            <span class="faq-question-text">How long do invisible aligners take to work?</span>
+                            <span class="faq-icon-toggle">+</span>
+                        </button>
+                        <div class="faq-accordion-body">
+                            <div class="faq-answer-text">Treatment times vary depending on the complexity of your case,
+                                but most patients see final results in 6 to 18 months.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button type="button" class="faq-accordion-header" aria-expanded="false">
+                            <span class="faq-question-text">Are dental implants painful?</span>
+                            <span class="faq-icon-toggle">+</span>
+                        </button>
+                        <div class="faq-accordion-body">
+                            <div class="faq-answer-text">No, the procedure is performed under local anesthesia. Most
+                                patients report less discomfort than a standard tooth extraction.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button type="button" class="faq-accordion-header" aria-expanded="false">
+                            <span class="faq-question-text">Do you offer consultation for children?</span>
+                            <span class="faq-icon-toggle">+</span>
+                        </button>
+                        <div class="faq-accordion-body">
+                            <div class="faq-answer-text">Yes! We provide comprehensive pediatric dentistry in a fun,
+                                child-friendly environment.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button type="button" class="faq-accordion-header" aria-expanded="false">
+                            <span class="faq-question-text">What is the cost of treatment?</span>
+                            <span class="faq-icon-toggle">+</span>
+                        </button>
+                        <div class="faq-accordion-body">
+                            <div class="faq-answer-text">Costs vary depending on your dental needs. We provide full
+                                pricing details during your free consultation, with flexible installment options.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA & Community Camp Offer -->
+        <section class="cta-section">
+            <div class="container cta-inner">
+                <h2>Ready to achieve your perfect smile in Vallikunnam?</h2>
+                <p>Book your free consultation with Dr. Farhana (BDS) today. Transparent treatment pricing, zero-pain methods, and personalized smile planning in Kanjippuzha Pallimukk.</p>
+                <div class="hero-actions" style="justify-content: center;">
+                    <a href="tel:+917012761098" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Book Free Consultation
+                    </a>
+                    <a href="https://wa.me/917012761098?text=Hello%20Dr.%20Farhana,%20I%20would%20like%20to%20book%20a%20consultation%20at%20Family%20Dental%20Clinic." target="_blank" class="btn btn-outline">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+
+                <!-- Camp Offer Card -->
+                <div id="community-outreach" class="camp-offer-banner" style="margin-top: 3rem; text-align: left;">
+                    <div>
+                        <span class="camp-offer-tag">COMMUNITY OUTREACH</span>
+                        <h4 style="color: #92400e;">Free Oral Screening & 15% Scaling Discount</h4>
+                        <p style="color: #78350f; font-size: 0.95rem; margin-bottom: 0;">Use Coupon Code: <strong>FD-CAMP15</strong> for your complimentary oral checkup and 15% discount on ultrasonic scaling.</p>
+                    </div>
+                    <a href="https://wa.me/917012761098?text=Hello%20Dr.%20Farhana,%20I%20would%20like%20to%20redeem%20the%20FD-CAMP15%20card." target="_blank" class="btn btn-primary" style="font-size: 0.9rem;">
+                        Redeem via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Google Review Standee Card -->
+                <div id="clinic-reviews" class="review-engine-banner" style="margin-top: 2rem; text-align: left;">
+                    <div class="review-engine-info">
+                        <div class="review-engine-stars">
+                            <span class="review-rating-icons" aria-label="5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            <span class="review-rating-label" style="color: #0f172a; font-weight: 700;">4.9 Rating • 33 Reviews</span>
+                        </div>
+                        <h3>Help our local clinic grow in Vallikunnam</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;">
+                            Have you visited Dr. Farhana recently? Take 30 seconds to support Family Dental Clinic with a Google Review. It helps local families find gentle, trustworthy dental care.
+                        </p>
+                    </div>
+                    <a href="https://maps.google.com/?cid=1155437812921048890" target="_blank" class="btn-google-review">
+                        <i class="fab fa-google"></i> Leave a Google Review
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map Section -->
+        <section class="map-section bg-alt" id="location">
+            <div class="container">
+                <div class="map-header">
+                    <h2>Visit Our Clinic in Kanjippuzha Pallimukk</h2>
+                    <p>Conveniently located on Changankulangara - Kambisseri Road, Vallikunnam, Kerala 690501</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.3697445803323!2d76.56293889999999!3d9.121036700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b061b264a857cef%3A0x1008df66628f1f3a!2sFamily%20Dental%20Care%2C%20Kanjippuzha!5e0!3m2!1sen!2sin!4v1786685539718!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">FamilyDental.</a>
+                    <p>Kanjippuzha, Vallikunnam's premier clinic for Invisible Aligners, Dental Implants, and Gentle Family Dentistry. Led by Dr. Farhana (BDS).</p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services Hub</a></li>
+                        <li><a href="/services#doctor-bio">Dr. Farhana (BDS)</a></li>
+                        <li><a href="/blog">Dental Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h4>Treatment Pillars</h4>
+                    <ul>
+                        <li><a href="/services#aligners">Invisible Aligners</a></li>
+                        <li><a href="/services#implants">Dental Implants</a></li>
+                        <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
+                        <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <div class="footer-contact-item">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Kanjippuzha Pallimukk,<br>Changankulangara - Kambisseri Rd,<br>Vallikunnam, Kerala
+                            690501</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <span><a href="tel:+917012761098" style="color: inherit; text-decoration: none;">+91 70127
+                                61098</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span><i class="far fa-clock"></i></span>
+                        <span>Mon - Sat: 9:00 AM - 6:30 PM<br>Sunday: Closed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; {{ date('Y') }} Family Dental Care. All rights reserved. Designed for Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('nav');
+
+            if (menuToggle && nav) {
+                const closeMenu = () => {
+                    nav.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.querySelector('i').className = 'fas fa-bars';
+                };
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape' && nav.classList.contains('active')) {
+                        closeMenu();
+                        menuToggle.focus();
+                    }
+                });
+                menuToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    nav.classList.toggle('active');
+                    menuToggle.setAttribute('aria-expanded', String(nav.classList.contains('active')));
+                    const icon = menuToggle.querySelector('i');
+                    if (nav.classList.contains('active')) {
+                        icon.className = 'fas fa-times';
+                    } else {
+                        icon.className = 'fas fa-bars';
+                    }
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (nav.classList.contains('active') && !nav.contains(e.target) && !menuToggle.contains(e.target)) {
+                        closeMenu();
+                    }
+                });
+
+                // Close menu when a link is clicked
+                nav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        closeMenu();
+                    });
+                });
+            }
+
+            document.querySelectorAll('[data-service-url]').forEach(button => {
+                button.addEventListener('click', () => {
+                    window.location.assign(button.dataset.serviceUrl);
+                });
+            });
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-accordion-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.faq-accordion-header');
+                const toggle = item.querySelector('.faq-icon-toggle');
+
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-accordion-header').setAttribute('aria-expanded', 'false');
+                        const otherToggle = otherItem.querySelector('.faq-icon-toggle');
+                        if (otherToggle) otherToggle.textContent = '+';
+                    });
+
+                    if (!isActive) {
+                        item.classList.add('active');
+                        header.setAttribute('aria-expanded', 'true');
+                        if (toggle) toggle.textContent = '−';
+                    } else {
+                        item.classList.remove('active');
+                        if (toggle) toggle.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

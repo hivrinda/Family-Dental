@@ -2367,3 +2367,481 @@ footer {
     border-radius: 6px;
     letter-spacing: 0.5px;
 }
+
+/* Homepage alignment: preserve the existing visual styles and section order. */
+.home-page .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+}
+.home-page .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+.home-page .service-card p {
+    flex: 1;
+}
+.home-page .about-list li {
+    text-align: left;
+    align-items: flex-start;
+}
+.home-page .about-list li i {
+    flex-shrink: 0;
+    line-height: inherit;
+}
+@media (max-width: 968px) {
+    .home-page .about-content > div {
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .home-page .about-content > div .btn {
+        width: 100%;
+    }
+    .home-page .malayalam-snippet-actions {
+        width: 100%;
+    }
+    .home-page .malayalam-snippet-actions a {
+        width: 100%;
+        justify-content: center;
+    }
+    .home-page .features-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .home-page .cta-inner h2,
+    .home-page .map-header h2 {
+        overflow-wrap: anywhere;
+    }
+    .home-page .review-engine-info,
+    .home-page .malayalam-snippet-content {
+        min-width: 0;
+    }
+    .home-page .review-engine-banner .btn {
+        max-width: 100%;
+    }
+}
+
+/* Keep homepage content and actions aligned across intermediate widths. */
+.home-page .malayalam-snippet-content,
+.home-page .about-inner > *,
+.home-page .footer-grid > * {
+    min-width: 0;
+}
+.home-page .marquee-track .testimonial-card {
+    display: flex;
+    flex-direction: column;
+}
+.home-page .testimonial-author {
+    margin-top: auto;
+}
+.home-page .author-avatar {
+    flex-shrink: 0;
+}
+.home-page .footer-contact-item > span:first-child {
+    flex: 0 0 1.1rem;
+    text-align: center;
+}
+@media (min-width: 969px) {
+    .home-page .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 969px) and (max-width: 1200px) {
+    .home-page #home-navigation a {
+        padding-left: 0.65rem;
+        padding-right: 0.65rem;
+        white-space: nowrap;
+    }
+    .home-page .footer-grid {
+        gap: 2rem;
+    }
+}
+@media (min-width: 1101px) {
+    .home-page .malayalam-snippet-card {
+        flex-wrap: nowrap;
+    }
+    .home-page .malayalam-snippet-content {
+        flex: 1 1 0;
+    }
+    .home-page .malayalam-snippet-actions {
+        flex: 0 1 auto;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 1100px) {
+    .home-page .malayalam-snippet-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .home-page .malayalam-snippet-content {
+        flex: 0 1 auto;
+    }
+    .home-page .malayalam-snippet-actions {
+        justify-content: center;
+    }
+}
+@media (max-width: 968px) {
+    .home-page .about-list {
+        width: fit-content;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 744px) and (max-width: 968px) {
+    .home-page .services-grid > .service-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: calc((100% - 2.5rem) / 2);
+        justify-self: center;
+    }
+}
+@media (max-width: 600px) {
+    .home-page .malayalam-snippet-card,
+    .home-page .review-engine-banner {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .home-page .malayalam-snippet-timing {
+        gap: 0.75rem;
+    }
+    .home-page .malayalam-snippet-timing span {
+        align-items: flex-start;
+    }
+    .home-page .malayalam-snippet-timing i {
+        flex-shrink: 0;
+        line-height: inherit;
+    }
+    .home-page .camp-offer-banner .btn,
+    .home-page .btn-google-review {
+        width: 100%;
+        justify-content: center;
+    }
+    .home-page .footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .home-page .footer-brand,
+    .home-page .footer-grid > .footer-col:last-child {
+        grid-column: auto;
+    }
+}
+.home-page #about .about-inner {
+    align-items: start;
+}
+@media (min-width: 969px) and (max-width: 1100px) {
+    .home-page #about .about-content > div .btn {
+        width: 100%;
+    }
+}
+.home-page #about,
+.home-page #services,
+.home-page #contact,
+.home-page #location {
+    scroll-margin-top: 110px;
+}
+
+/* Align the homepage treatment details and outreach/review content. */
+.home-page #implants-detail .about-inner,
+.home-page #root-canal-detail .about-inner {
+    align-items: start;
+}
+.home-page #implants-detail .about-image img,
+.home-page #root-canal-detail .about-image img {
+    display: block;
+}
+.home-page #implants-detail,
+.home-page #root-canal-detail {
+    scroll-margin-top: 110px;
+}
+.home-page .camp-offer-banner,
+.home-page .review-engine-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+    align-items: start;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+}
+.home-page .camp-offer-banner > div,
+.home-page .review-engine-info {
+    width: 100%;
+    min-width: 0;
+}
+.home-page .camp-offer-banner > .btn,
+.home-page .review-engine-banner > .btn-google-review {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.home-page .review-engine-stars {
+    flex-wrap: wrap;
+    column-gap: 0.75rem;
+    row-gap: 0.5rem;
+}
+.home-page .review-rating-icons {
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 0.25rem;
+    align-items: center;
+}
+.home-page .review-rating-label {
+    min-width: 0;
+}
+@media (max-width: 600px) {
+    .home-page .camp-offer-banner,
+    .home-page .review-engine-banner {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .home-page #implants-detail .about-content > .btn,
+    .home-page #root-canal-detail .about-content > .btn {
+        width: 100%;
+    }
+}
+
+.home-page .review-engine-banner {
+    padding-left: calc(2.5rem - 1px);
+    padding-right: calc(2.5rem - 1px);
+}
+.home-page #community-outreach,
+.home-page #clinic-reviews {
+    scroll-margin-top: 110px;
+}
+@media (max-width: 600px) {
+    .home-page .review-engine-banner {
+        padding-left: calc(1.5rem - 1px);
+        padding-right: calc(1.5rem - 1px);
+    }
+}
+
+/* Match treatment check icons to the first text line, including wrapped items. */
+.home-page #implants-detail .about-list li,
+.home-page #root-canal-detail .about-list li {
+    display: grid;
+    grid-template-columns: 1.3rem minmax(0, 1fr);
+    align-items: start;
+    line-height: 1.6rem;
+}
+.home-page #implants-detail .about-list li > i,
+.home-page #root-canal-detail .about-list li > i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.3rem;
+    height: 1.6rem;
+    line-height: 1;
+}
+
+/* Keep the outreach badge intact when its label wraps on narrow screens. */
+.home-page #community-outreach > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+    gap: 0.5rem;
+}
+.home-page #community-outreach .camp-offer-tag {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    line-height: 1.6;
+}
+.home-page #community-outreach h4 {
+    margin: 0;
+}
+.home-page #community-outreach p strong {
+    white-space: nowrap;
+}
+
+/* Keep FAQ icons in one column beside the first line of each question. */
+.home-page #faq {
+    scroll-margin-top: 110px;
+}
+.home-page .faq-container > * {
+    min-width: 0;
+}
+.home-page .faq-accordion-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1.75rem;
+    column-gap: 2rem;
+    align-items: start;
+}
+.home-page .faq-question-text {
+    padding-right: 0;
+    line-height: 1.4;
+}
+.home-page .faq-icon-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.home-page .faq-answer-text {
+    padding-right: 3.75rem;
+}
+@media (max-width: 600px) {
+    .home-page .faq-accordion-header {
+        column-gap: 1rem;
+    }
+    .home-page .faq-answer-text {
+        padding-right: 2.75rem;
+    }
+}
+
+/* Services offer: wrap whole text blocks instead of squeezing narrow columns. */
+#services-community-offer .services-offer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+    max-width: 100%;
+}
+#services-community-offer .camp-offer-tag {
+    display: inline-flex;
+    max-width: 100%;
+    flex-shrink: 0;
+    align-items: center;
+}
+#services-community-offer .services-offer-code {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+#services-community-offer .services-offer-content > span:last-child {
+    flex: 1 1 260px;
+    min-width: 0;
+}
+#services-community-offer > .btn {
+    max-width: 100%;
+}
+@media (max-width: 600px) {
+    #services-community-offer {
+        justify-content: center;
+    }
+    #services-community-offer .services-offer-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services-community-offer .services-offer-content > span:last-child {
+        flex: 0 1 auto;
+    }
+}
+
+#services-community-offer { scroll-margin-top: 110px; }
+
+/* PDF wireframe: utility strip, full treatment menu and consultation enquiry. */
+.footer-catchment { border-top: 1px solid rgba(255,255,255,.15); padding: 2rem 0; text-align: center; }
+.footer-catchment h3 { font-size: 1.2rem; color: white; margin-bottom: .75rem; }
+.footer-catchment p { line-height: 2; }
+.footer-catchment p span { padding: 0 .35rem; }
+.footer-catchment address { margin-top: 1rem; font-size: .9rem; font-style: normal; line-height: 1.8; overflow-wrap: anywhere; }
+.smile-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.smile-gallery-card { min-width: 0; background: white; border: 1px solid var(--border); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.smile-gallery-card figure { margin: 0; background: var(--primary-light); }
+.smile-gallery-card img { display: block; width: 100%; height: auto; }
+.smile-gallery-card figcaption { display: grid; grid-template-columns: 1fr 1fr; padding: .7rem; text-align: center; font-size: .8rem; font-weight: 700; color: var(--primary); }
+.smile-gallery-copy { padding: 1.75rem; }
+.smile-gallery-copy h3 { font-size: 1.6rem; color: var(--text-dark); margin-bottom: 1rem; }
+.smile-gallery-copy dt { font-size: .75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: .05em; margin-top: 1rem; }
+.smile-gallery-copy dd { margin: .3rem 0 0; line-height: 1.7; }
+@media (max-width: 700px) { .smile-gallery-grid { grid-template-columns: minmax(0, 1fr); } .smile-gallery-copy { padding: 1.25rem; } }
+.comprehensive-care-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.comprehensive-care-card { display: flex; flex-direction: column; min-width: 0; scroll-margin-top: 110px; }
+.comprehensive-care-card p { flex: 1; }
+.comprehensive-care-card h3 { font-size: 1.35rem; line-height: 1.4; margin-bottom: .75rem; }
+.doctor-consultation-image { width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg); }
+.doctor-image-caption { font-size: .8rem; }
+.doctor-authority h2 { color: var(--text-dark); font-size: clamp(2rem, 3vw, 2.75rem); line-height: 1.3; margin: .5rem 0 1rem; }
+.doctor-authority .about-content > p { margin-bottom: 1rem; line-height: 1.8; }
+.doctor-credentials { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+.doctor-credentials span { padding: .5rem .75rem; font-size: .8rem; font-weight: 600; color: var(--primary); background: white; border-radius: 12px; }
+.doctor-authority .hero-actions { flex-wrap: wrap; }
+.technology-section { margin-top: 4rem; }
+.clinical-technology-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; gap: 1.5rem; }
+.clinical-technology-grid > li { display: flex; gap: 1rem; padding: 1.5rem; background: white; border-radius: 20px; min-width: 0; }
+.clinical-technology-grid i { color: var(--primary); font-size: 1.5rem; flex-shrink: 0; padding-top: .25rem; }
+.clinical-technology-grid h3 { color: var(--text-dark); font-size: 1.2rem; margin-bottom: .75rem; }
+#doctor-bio { scroll-margin-top: 110px; }
+@media (max-width: 968px) { .comprehensive-care-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .comprehensive-care-grid, .clinical-technology-grid { grid-template-columns: minmax(0, 1fr); } }
+.wireframe-page h1, .wireframe-page h2 { overflow-wrap: anywhere; }
+.utility-bar { background: var(--primary); color: white; font-size: .75rem; line-height: 1.7; }
+.utility-inner { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1.5rem; padding-top: .5rem; padding-bottom: .5rem; text-align: center; }
+.utility-bar a { color: white; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.wireframe-page .wireframe-header { position: sticky; top: 0; padding: .6rem 1rem; margin-bottom: -88px; }
+.wireframe-header .header-inner { max-width: 1480px; padding: .6rem 1rem; gap: 1rem; }
+.wireframe-header .logo { flex-shrink: 0; font-size: 1.2rem; }
+.wireframe-header nav { gap: 0; }
+.wireframe-header nav a { padding: .65rem .6rem; font-size: .73rem; white-space: nowrap; }
+.wireframe-header nav .nav-booking { background: var(--primary); color: white; }
+.home-page .hero h1 { font-size: clamp(2rem, 3.4vw, 3.35rem); }
+.home-page .hero .hero-actions { flex-wrap: wrap; }
+.home-page .hero .location-badge { border-radius: 18px; }
+.hero-treatment-trust { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.hero-treatment-trust span { font-size: .85rem; font-weight: 600; color: var(--primary); }
+.hero-treatment-trust i { margin-right: .35rem; }
+.wireframe-pillar { scroll-margin-top: 110px; }
+.wireframe-pillar h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.25; margin: .75rem 0; color: var(--text-dark); }
+.pillar-intro { font-size: 1.15rem; color: var(--primary); margin-bottom: 1.25rem; }
+.pillar-copy { line-height: 1.85; max-width: 1000px; }
+.pillar-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; gap: 1.25rem; margin: 2rem 0; }
+.pillar-features li { display: flex; gap: .75rem; padding: 1.25rem; background: var(--primary-light); border-radius: 16px; }
+.pillar-features i { color: var(--primary); padding-top: .3rem; }
+.pillar-features h3 { font-size: 1.1rem; margin-bottom: .5rem; color: var(--text-dark); }
+.pillar-features p { font-size: .9rem; }
+.booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+.booking-grid h2 { font-size: clamp(2rem, 3vw, 2.75rem); color: var(--text-dark); margin: .75rem 0 1rem; }
+.booking-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem; }
+.booking-form label { display: block; font-size: .85rem; font-weight: 600; color: var(--text-dark); }
+.booking-form input, .booking-form select { display: block; width: 100%; min-width: 0; padding: .85rem; border: 1px solid var(--border); border-radius: 10px; margin-top: .5rem; font-size: 1rem; background: white; color: var(--text-main); }
+.booking-form input:focus-visible, .booking-form select:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+#before-after, #booking, #about { scroll-margin-top: 110px; }
+@media (max-width: 1250px) {
+    .wireframe-header .mobile-menu-toggle { display: inline-flex; }
+    .wireframe-header .header-inner { position: relative; }
+    .wireframe-header nav { display: none; position: absolute; top: calc(100% + .5rem); left: 0; right: 0; padding: 1rem; border-radius: 20px; background: white; box-shadow: var(--shadow-lg); max-height: 75vh; overflow-y: auto; }
+    .wireframe-header nav.active { display: flex; flex-direction: column; }
+    .wireframe-header nav a { padding: .7rem 1rem; font-size: .9rem; }
+}
+@media (max-width: 767px) {
+    .hero-treatment-trust { grid-template-columns: 1fr 1fr; }
+    .pillar-features, .booking-grid, .booking-fields { grid-template-columns: minmax(0, 1fr); }
+    .booking-grid { gap: 2rem; }
+    .wireframe-header .logo { font-size: 1.1rem; }
+    .wireframe-pillar { padding: 1.5rem; }
+    .utility-inner { padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* Regional cosmetic care sections reuse the existing palette and cards. */
+.revamp-directions.city-route-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.city-route-grid .service-card { padding: 1.5rem; display: flex; flex-direction: column; }
+.city-route-grid h3 { font-size: 1.35rem; line-height: 1.4; }
+.city-route-stats { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin: 1.25rem 0; }
+.city-route-stats dt { font-size: .7rem; color: var(--text-muted); }
+.city-route-stats dd { font-size: 1.5rem; font-weight: 800; color: var(--primary); white-space: nowrap; }
+.city-route-stats dd span { font-size: .8rem; font-weight: 500; }
+.city-route-grid .city-route-via { font-size: .85rem; flex: 1; }
+.revamp-faq[open] summary { color: var(--primary); }
+@media (max-width: 1100px) { .revamp-directions.city-route-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .revamp-directions.city-route-grid { grid-template-columns: minmax(0, 1fr); } }
+.revamp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.revamp-family-grid, .revamp-directions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.revamp-grid > *, .revamp-directions > * { min-width: 0; }
+.revamp-family-heading { margin-top: 3rem; }
+.revamp-family-item { padding: 1.25rem; background: var(--bg-alt, #f0fdfa); border-radius: 16px; color: var(--text-dark); text-decoration: none; }
+.revamp-family-item i { color: var(--primary); margin-right: .4rem; }
+.revamp-link { display: inline-block; margin-top: 1rem; color: var(--primary); font-weight: 700; text-decoration: none; }
+.revamp-directions > a { color: inherit; text-decoration: none; }
+.revamp-note { margin: 1.5rem 0 0; color: var(--text-muted); line-height: 1.7; }
+.revamp-faq { border-bottom: 1px solid #e2e8f0; padding: 1.25rem 0; }
+.revamp-faq summary { cursor: pointer; font-weight: 600; color: var(--text-dark); line-height: 1.5; }
+.revamp-faq p { padding-top: 1rem; line-height: 1.7; color: var(--text-muted); }
+.revamp-faq summary:focus-visible, .revamp-directions a:focus-visible, .revamp-family-item:focus-visible { outline: 3px solid var(--primary); outline-offset: 5px; }
+#smile-corrections, #veneers, #family-care, #directions { scroll-margin-top: 110px; }
+@media (max-width: 767px) {
+    .revamp-grid, .revamp-family-grid, .revamp-directions { grid-template-columns: minmax(0, 1fr); }
+}
