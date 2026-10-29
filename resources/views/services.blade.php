@@ -131,27 +131,27 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="/" class="footer-logo">FamilyDentalCare</a>
+                    <a href="{{ url('/') }}" class="footer-logo">FamilyDentalCare</a>
                     <p>Cosmetic, implant and family dental care with Dr. Farhana (BDS), welcoming patients from Kayamkulam, Oachira and Karunagappally.</p>
                 </div>
 
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/services">Services Hub</a></li>
-                        <li><a href="/blog">Dental Blog</a></li>
-                        <li><a href="/#about">About Dr. Farhana</a></li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/services') }}">Services Hub</a></li>
+                        <li><a href="{{ url('/blog') }}">Dental Blog</a></li>
+                        <li><a href="{{ url('/') }}#about">About Dr. Farhana</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Treatment Pillars</h4>
                     <ul>
-                        <li><a href="/services#aligners">Invisible Aligners</a></li>
-                        <li><a href="/services#implants">Permanent Implants</a></li>
-                        <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
-                        <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>
+                        <li><a href="{{ url('/services') }}#aligners">Invisible Aligners</a></li>
+                        <li><a href="{{ url('/services') }}#implants">Permanent Implants</a></li>
+                        <li><a href="{{ url('/services') }}#root-canal">Single-Sitting RCT</a></li>
+                        <li><a href="{{ url('/services') }}#root-canal">Ultrasonic Scaling</a></li>
                     </ul>
                 </div>
 

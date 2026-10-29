@@ -135,9 +135,9 @@
     <!-- Header bar -->
     <header class="admin-header">
         <div class="container admin-header-inner">
-            <a href="/" class="logo">FamilyDentalCare <span style="font-weight: 400; font-size: 1rem; opacity: 0.7;">Admin</span></a>
+            <a href="{{ url('/') }}" class="logo">FamilyDentalCare <span style="font-weight: 400; font-size: 1rem; opacity: 0.7;">Admin</span></a>
             <div class="admin-nav">
-                <a href="/" target="_blank" style="color: var(--text-muted); text-decoration: none; font-weight: 600;"><i class="fas fa-external-link-alt"></i> View Site</a>
+                <a href="{{ url('/') }}" target="_blank" style="color: var(--text-muted); text-decoration: none; font-weight: 600;"><i class="fas fa-external-link-alt"></i> View Site</a>
                 <form action="{{ route('admin.logout') }}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-outline btn-sm">

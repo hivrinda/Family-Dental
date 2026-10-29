@@ -1,5 +1,15 @@
 # Hostinger SSH setup
 
+## Existing subfolder installation
+
+If the site is currently served at `https://YOUR-HOST/site/public/`, keep that full prefix in `.env`:
+
+```dotenv
+APP_URL=https://YOUR-HOST/site/public
+```
+
+Then run `php artisan config:clear` and `php artisan view:clear`. Links use Laravel URL helpers so they preserve the installation base path. The repository `.htaccess` also avoids repeated `public/public` rewrites under a subfolder. Do not add a hard-coded `RewriteBase /` or domain-root redirects to fix navigation. The recommended new installation remains a checkout outside `public_html`, with only its `public` folder exposed. An existing subfolder layout cannot use the setup script's sibling `public_html` publishing mode without relocating the checkout.
+
 Requires a hosting plan with SSH, PHP 8.2+ with Laravel extensions, and Composer 2. Match the website PHP version in hPanel to the SSH CLI version. Configure domain DNS and SSL in hPanel first.
 
 Clone **beside** `public_html`, not inside it:

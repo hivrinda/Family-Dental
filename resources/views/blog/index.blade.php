@@ -100,7 +100,7 @@
                     <div class="blog-cta-content">
                         <h2>Looking for a Perfect Smile?</h2>
                         <p>Book a consultation with our experienced dental specialists and discover customized treatments for you and your family.</p>
-                        <a href="/#contact" class="blog-cta-btn">GET IN TOUCH</a>
+                        <a href="{{ url('/') }}#contact" class="blog-cta-btn">GET IN TOUCH</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
             <div class="footer-grid">
                 <!-- Brand Column -->
                 <div class="footer-brand">
-                    <a href="/" class="footer-logo">FamilyDentalCare</a>
+                    <a href="{{ url('/') }}" class="footer-logo">FamilyDentalCare</a>
                     <p>Experience premium dental care in a comfortable environment. Your smile is our top priority.</p>
                 </div>
                 
@@ -121,10 +121,10 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/services">Services Hub</a></li>
-                        <li><a href="/services#doctor-bio">Dr. Farhana (BDS)</a></li>
-                        <li><a href="/blog">Dental Blog</a></li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/services') }}">Services Hub</a></li>
+                        <li><a href="{{ url('/services') }}#doctor-bio">Dr. Farhana (BDS)</a></li>
+                        <li><a href="{{ url('/blog') }}">Dental Blog</a></li>
                     </ul>
                 </div>
 
@@ -132,10 +132,10 @@
                 <div class="footer-col">
                     <h4>Treatment Pillars</h4>
                     <ul>
-                        <li><a href="/services#aligners">Invisible Aligners</a></li>
-                        <li><a href="/services#implants">Dental Implants</a></li>
-                        <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
-                        <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>
+                        <li><a href="{{ url('/services') }}#aligners">Invisible Aligners</a></li>
+                        <li><a href="{{ url('/services') }}#implants">Dental Implants</a></li>
+                        <li><a href="{{ url('/services') }}#root-canal">Single-Sitting RCT</a></li>
+                        <li><a href="{{ url('/services') }}#root-canal">Ultrasonic Scaling</a></li>
                     </ul>
                 </div>
 

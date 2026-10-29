@@ -115,7 +115,7 @@
                     <a href="https://wa.me/917012761098?text=ഹലോ%20ഡോക്ടർ,%20എനിക്ക്%20ചികിത്സയെക്കുറിച്ച്%20കൂടുതൽ%20അറിയണം." target="_blank" class="btn-malayalam-whatsapp">
                         <i class="fab fa-whatsapp"></i> WhatsApp ബുക്കിംഗ്
                     </a>
-                    <a href="/services" class="btn-malayalam-call">
+                    <a href="{{ url('/services') }}" class="btn-malayalam-call">
                         <i class="fas fa-tooth"></i> എല്ലാ സേവനങ്ങളും
                     </a>
                 </div>
@@ -291,7 +291,7 @@
             <div class="footer-grid">
                 <!-- Brand Column -->
                 <div class="footer-brand">
-                    <a href="/" class="footer-logo">FamilyDentalCare</a>
+                    <a href="{{ url('/') }}" class="footer-logo">FamilyDentalCare</a>
                     <p>Cosmetic, implant and family dental care with Dr. Farhana (BDS), welcoming patients from Kayamkulam, Oachira and Karunagappally.</p>
                 </div>
 
@@ -299,10 +299,10 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/services">Services Hub</a></li>
-                        <li><a href="/services#doctor-bio">Dr. Farhana (BDS)</a></li>
-                        <li><a href="/blog">Dental Blog</a></li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/services') }}">Services Hub</a></li>
+                        <li><a href="{{ url('/services') }}#doctor-bio">Dr. Farhana (BDS)</a></li>
+                        <li><a href="{{ url('/blog') }}">Dental Blog</a></li>
                     </ul>
                 </div>
 
@@ -310,10 +310,10 @@
                 <div class="footer-col">
                     <h4>Treatment Pillars</h4>
                     <ul>
-                        <li><a href="/services#aligners">Invisible Aligners</a></li>
-                        <li><a href="/services#implants">Dental Implants</a></li>
-                        <li><a href="/services#root-canal">Single-Sitting RCT</a></li>
-                        <li><a href="/services#root-canal">Ultrasonic Scaling</a></li>
+                        <li><a href="{{ url('/services') }}#aligners">Invisible Aligners</a></li>
+                        <li><a href="{{ url('/services') }}#implants">Dental Implants</a></li>
+                        <li><a href="{{ url('/services') }}#root-canal">Single-Sitting RCT</a></li>
+                        <li><a href="{{ url('/services') }}#root-canal">Ultrasonic Scaling</a></li>
                     </ul>
                 </div>
 

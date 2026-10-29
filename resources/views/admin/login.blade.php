@@ -107,7 +107,7 @@
                 </button>
             </form>
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="/" style="color: var(--primary); text-decoration: none; font-weight: 700; font-size: 0.95rem;">
+                <a href="{{ url('/') }}" style="color: var(--primary); text-decoration: none; font-weight: 700; font-size: 0.95rem;">
                     <i class="fas fa-arrow-left"></i> Return to Homepage
                 </a>
             </div>

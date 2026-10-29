@@ -6,18 +6,18 @@
 </div>
 <header class="wireframe-header">
     <div class="container header-inner">
-        <a href="/" class="logo">FamilyDentalCare</a>
+        <a href="{{ url('/') }}" class="logo">FamilyDentalCare</a>
         <button class="mobile-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-navigation"><i class="fas fa-bars" aria-hidden="true"></i></button>
         <nav id="site-navigation" aria-label="Main navigation">
-            <a href="/">Home</a>
-            <a href="/#smile-corrections">Smile Corrections</a>
-            <a href="/#veneers">Dental Veneers</a>
-            <a href="/#aligners">Clear Aligners</a>
-            <a href="/#implants">Dental Implants</a>
-            <a href="/#about">About Dr. Farhana</a>
-            <a href="/#before-after">Before & After</a>
-            <a href="/blog">Blog</a>
-            <a class="nav-booking" href="/#booking">Book Consultation</a>
+            <a href="{{ url('/') }}">Home</a>
+            <a href="{{ url('/') }}#smile-corrections">Smile Corrections</a>
+            <a href="{{ url('/') }}#veneers">Dental Veneers</a>
+            <a href="{{ url('/') }}#aligners">Clear Aligners</a>
+            <a href="{{ url('/') }}#implants">Dental Implants</a>
+            <a href="{{ url('/') }}#about">About Dr. Farhana</a>
+            <a href="{{ url('/') }}#before-after">Before & After</a>
+            <a href="{{ url('/blog') }}">Blog</a>
+            <a class="nav-booking" href="{{ url('/') }}#booking">Book Consultation</a>
         </nav>
     </div>
 </header>

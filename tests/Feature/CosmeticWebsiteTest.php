@@ -48,7 +48,7 @@ class CosmeticWebsiteTest extends TestCase
         $html = $response->getContent();
         foreach (['smile-corrections', 'veneers', 'aligners', 'implants', 'about', 'before-after', 'booking'] as $id) {
             $this->assertSame(1, substr_count($html, 'id="'.$id.'"'), $id);
-            $response->assertSee('href="/#'.$id.'"', false);
+            $response->assertSee('href="'.url('/').'#'.$id.'"', false);
         }
         $response->assertSee('Book Free Smile Assessment')->assertSee('Digital 3D Smile Design')
             ->assertSee('Approx. 20–25-min drive')->assertSee('id="smile-booking-form"', false)

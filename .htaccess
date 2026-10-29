@@ -1,10 +1,8 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Redirect the root request to the public folder
-    RewriteRule ^$ public/ [L]
-
-    # Redirect all other requests to the public folder if they aren't already targeting it
-    RewriteCond %{REQUEST_URI} !^/public/
+    # Match relative to this directory, including when installed under /site/.
+    # Do not repeatedly rewrite /site/public/... to public/public/....
+    RewriteRule ^public(?:/|$) - [L]
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
