@@ -7,15 +7,12 @@
         <div class="about-content">
             <span class="faq-label-small">CLINICAL LEADERSHIP</span>
             <h2 id="doctor-authority-title">Meet Dr. Farhana, <span class="serif-italic">BDS</span></h2>
-            <p>Registered with the <strong>Kerala Dental Council</strong>, Dr. Farhana leads FamilyDentalCare with <strong>8+ years of clinical experience</strong>, focusing on conservative cosmetic dentistry, implant treatment planning and patient comfort.</p>
+            <p>Registered with the <strong>Kerala Dental Council</strong>, Dr. Farhana leads FamilyDentalCare with a focus on conservative cosmetic dentistry, implant treatment planning and patient comfort.</p>
             <p>Welcoming patients from Oachira, Kayamkulam and surrounding areas, she combines personalised digital planning with a clear explanation of your options, expected treatment stages and costs.</p>
-            @if(config('clinic.verified_smile_treatments'))
-                <p class="doctor-treatment-count"><strong>10,000+ completed smile treatments</strong> across the clinic's recorded clinical care.</p>
-            @endif
             <div class="doctor-credentials" aria-label="Clinical credentials">
                 <span><i class="fas fa-graduation-cap" aria-hidden="true"></i> BDS</span>
                 <span><i class="fas fa-id-card" aria-hidden="true"></i> Kerala Dental Council Registered</span>
-                <span><i class="fas fa-user-md" aria-hidden="true"></i> 8+ Years Clinical Experience</span>
+                <span><i class="fas fa-user-md" aria-hidden="true"></i> Personalised Patient Care</span>
             </div>
             <div class="hero-actions">
                 <a href="{{ url('/') }}#booking" class="btn btn-primary">Book with Dr. Farhana</a>

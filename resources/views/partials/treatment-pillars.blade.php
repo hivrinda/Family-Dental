@@ -46,10 +46,29 @@
     <div class="container">
         @foreach($pillars as $pillar)
             <article class="services-pillar-card wireframe-pillar" id="{{ $pillar['id'] }}">
-                <span class="pillar-header-badge badge-aligners">Treatment Pillar {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                <div class="pillar-overview">
+                <div class="pillar-overview-copy">
+                <span class="pillar-header-badge badge-aligners">{{ [
+                    'smile-corrections' => 'Expert Treatment for Smile Correction',
+                    'veneers' => 'Trusted Treatment for Dental Veneers',
+                    'aligners' => 'Comfortable, Durable & Strong Aligners',
+                    'implants' => 'No Missing Teeth is Detected',
+                ][$pillar['id']] }}</span>
                 <h2>{{ $pillar['title'] }}</h2>
                 <p class="pillar-intro">{{ $pillar['intro'] }}</p>
                 <p class="pillar-copy">{{ $pillar['copy'] }}</p>
+                </div>
+                @php
+                    $treatmentImage = 'images/treatments/' . $pillar['id'] . (in_array($pillar['id'], ['smile-corrections', 'veneers']) ? '.png' : '.jpg');
+                    $treatmentAlt = [
+                        'smile-corrections' => 'Illustrative portrait showing a bright natural smile',
+                        'veneers' => 'Dental veneers and tooth shade matching illustration',
+                        'aligners' => 'A transparent removable dental aligner held in a hand',
+                        'implants' => 'Dental implant model showing the implant post and crown',
+                    ][$pillar['id']];
+                @endphp
+                <img class="pillar-treatment-image pillar-treatment-image--{{ $pillar['id'] }}" src="{{ asset($treatmentImage) }}?v={{ filemtime(public_path($treatmentImage)) }}" alt="{{ $treatmentAlt }}" width="960" height="720" loading="lazy" decoding="async">
+                </div>
                 <ul class="pillar-features">
                     @foreach($pillar['features'] as [$title, $detail])
                         <li><i class="fas fa-check-circle" aria-hidden="true"></i><div><h3>{{ $title }}</h3><p>{{ $detail }}</p></div></li>

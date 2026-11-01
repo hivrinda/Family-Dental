@@ -48,32 +48,12 @@
                         <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop"
                             alt="Advanced Smile Corrections and Dental Veneers near Oachira and Kayamkulam">
                     </div>
-                    <!-- Floating Badge 1 -->
-                    <div class="floating-badge floating-badge-1">
-                        <div class="badge-icon"><i class="fas fa-award"></i></div>
-                        <div class="badge-text">
-                            <h4>Smile Care</h4>
-                            <p>Designed for You</p>
-                        </div>
                     </div>
-                    <!-- Floating Badge 2 -->
-                    <div class="floating-badge floating-badge-2">
-                        <div class="badge-icon"><i class="fas fa-smile"></i></div>
-                        <div class="badge-text">
-                            <h4>Your Smile</h4>
-                            <p>Our Focus</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="container hero-treatment-trust" aria-label="Treatment technology">
-            <span><i class="fas fa-check-circle" aria-hidden="true"></i> Digital 3D Smile Design</span>
-            <span><i class="fas fa-check-circle" aria-hidden="true"></i> Ultra-Thin Porcelain Veneers</span>
-            <span><i class="fas fa-check-circle" aria-hidden="true"></i> Certified Clear Aligners</span>
-            <span><i class="fas fa-check-circle" aria-hidden="true"></i> Long-Term Dental Implants</span>
-        </div>
         <!-- Trust Bar Section -->
         <section class="trust-bar">
             <div class="container trust-inner">
@@ -89,7 +69,7 @@
                 <div class="trust-item">
                     <div class="trust-value"><i class="fas fa-check-circle"
                             style="color: var(--primary); font-size: 2.25rem;"></i></div>
-                    <div class="trust-label">BDS certified</div>
+                    <div class="trust-label">Smile Correction &amp;<br>Root Canal Expert</div>
                 </div>
             </div>
             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>

@@ -50,7 +50,7 @@ class CosmeticWebsiteTest extends TestCase
             $this->assertSame(1, substr_count($html, 'id="'.$id.'"'), $id);
             $response->assertSee('href="'.url('/').'#'.$id.'"', false);
         }
-        $response->assertSee('Book Free Smile Assessment')->assertSee('Digital 3D Smile Design')
+        $response->assertSee('Book Free Smile Assessment')
             ->assertSee('Approx. 20–25-min drive')->assertSee('id="smile-booking-form"', false)
             ->assertSee('action="https://wa.me/917012761098"', false);
         $this->assertSame(1, substr_count($html, 'site-navigation.js'));
@@ -65,7 +65,7 @@ class CosmeticWebsiteTest extends TestCase
             foreach (['root-canal', 'teeth-whitening', 'zirconia-crowns', 'kids-dentistry', 'wisdom-teeth', 'gum-therapy'] as $id) {
                 $this->assertSame(1, substr_count($html, 'id="'.$id.'"'), $path.' '.$id);
             }
-            $response->assertSee('10,000+ completed smile treatments')->assertSee('Kerala Dental Council Registered')
+            $response->assertDontSee('10,000+ completed smile treatments')->assertDontSee('8+ Years Clinical Experience')->assertSee('Kerala Dental Council Registered')
                 ->assertSee('Rotary Endodontics & Electronic Apex Locators', false)->assertSee('Class-B Autoclave Sterilization')
                 ->assertSee('Transparent Itemized Estimates');
             $this->assertLessThan(strpos($html, 'id="family-care"'), strpos($html, 'id="implants"'));

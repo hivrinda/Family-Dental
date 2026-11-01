@@ -1,0 +1,21 @@
+Treatment card stock photographs — Pexels
+
+smile-corrections.jpg: Kindel Media
+https://www.pexels.com/photo/close-up-photo-of-person-s-smile-7298633/
+
+veneers.jpg: Jitplavan Ray
+https://www.pexels.com/photo/close-up-shot-of-a-pretty-woman-in-red-saree-smiling-7971895/
+
+aligners.jpg: Anna Shvets
+https://www.pexels.com/photo/person-holding-clear-aligner-3845985/
+
+implants.jpg: cottonbro studio
+https://www.pexels.com/photo/close-up-shot-of-dental-implant-model-6502343/
+
+License: https://www.pexels.com/license/
+These are illustrative stock photographs, not clinic patient results.
+
+Active card replacements (2026-11-01):
+smile-corrections.png: AI-generated portrait using user-provided reference; illustrative, not a clinic patient result.
+veneers.png: User-provided dental veneers image.
+
